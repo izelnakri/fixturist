@@ -1,0 +1,2 @@
+defmodule Fixturastic do
+end
