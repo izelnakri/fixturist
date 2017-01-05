@@ -2,7 +2,7 @@
 
 Fixturist fixes the major caveat of fixture based backend testing: your fixture records might have foreign-key constraints. This can prevent the insertion of your fixture records and you have to keep track of the order of relationships during the insertion.
 
-This library checks if your records have relationships, fetches the required relationships from your development database and runs a nifty algorithm to order the insertion of fetched records. All happens with the minimal/optimized SQL under the hood.
+This library is smart algorithm that checks if your records have relationships, fetches the required relationships from your development database and runs a nifty algorithm to order the insertion of fetched records. All happens with the minimal/optimized SQL under the hood.
 
 **Fixturist only loads on test mix environments**
 

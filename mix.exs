@@ -4,7 +4,7 @@ defmodule Fixturist.Mixfile do
   def project do
     [
       app: :fixturist,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.3",
       description: description,
       package: package,
@@ -39,7 +39,7 @@ defmodule Fixturist.Mixfile do
 
   defp description do
      """
-     Fixturist fixes the foreign-key constraints for you in your fixture driven backend tests. It is an algorithm for populating relationships from your development database
+     Fix the foreign-key constraints in your fixture driven backend tests. It is an algorithm for populating relationships from your development database
      """
   end
 
