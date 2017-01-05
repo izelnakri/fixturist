@@ -2,7 +2,7 @@ defmodule Fixturastic.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :fixturastic,
+    [app: :fixturist,
      version: "0.1.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
@@ -27,6 +27,22 @@ defmodule Fixturastic.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:ecto, ">= 2.0.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
+  end
+
+  defp package do
+    [
+      name: :fixturist,
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["Izel Nakri"],
+      licenses: ["MIT License"],
+      links: %{
+        "GitHub" => "https://github.com/izelnakri/fixturist",
+        "Docs" => "https://hexdocs.pm/fixturis/Fixturist.html"
+      }
+    ]
   end
 end
