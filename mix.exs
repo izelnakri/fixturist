@@ -2,12 +2,16 @@ defmodule Fixturastic.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :fixturist,
-     version: "0.1.0",
-     elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps()]
+    [
+      app: :fixturist,
+      version: "0.1.0",
+      elixir: "~> 1.3",
+      description: description,
+      package: package,
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      deps: deps
+   ]
   end
 
   # Configuration for the OTP application
@@ -31,6 +35,12 @@ defmodule Fixturastic.Mixfile do
       {:ecto, ">= 2.0.0"},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
+  end
+
+  defp description do
+     """
+     Fixturist fixes the foreign-key constraints for you in your fixture driven backend tests. It is an algorithm for populating relationships from your development database
+     """
   end
 
   defp package do
