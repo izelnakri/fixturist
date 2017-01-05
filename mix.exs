@@ -1,4 +1,4 @@
-defmodule Fixturastic.Mixfile do
+defmodule Fixturist.Mixfile do
   use Mix.Project
 
   def project do
